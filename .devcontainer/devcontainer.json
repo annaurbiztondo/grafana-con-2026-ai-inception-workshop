@@ -1,7 +1,6 @@
 {
   "name": "GrafanaCon 2026 - AI Workshop",
   "features": {
-    "ghcr.io/anthropics/devcontainer-features/claude-code:1": {},
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1": {}
   }
 }
