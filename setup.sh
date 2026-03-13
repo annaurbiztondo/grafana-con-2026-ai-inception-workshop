@@ -25,6 +25,17 @@ if ! command -v jq &> /dev/null; then
   exit 1
 fi
 
+if ! command -v go &> /dev/null; then
+  echo "Error: go is required but not installed."
+  exit 1
+fi
+
+# Install mage
+if ! command -v mage &> /dev/null; then
+  echo "Installing mage..."
+  go install github.com/magefile/mage@latest
+fi
+
 # Prompt for password with retry
 MAX_ATTEMPTS=3
 ATTEMPT=0
