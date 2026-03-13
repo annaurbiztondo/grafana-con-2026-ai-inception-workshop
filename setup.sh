@@ -15,7 +15,7 @@ fi
 # Check if claude is installed
 if ! command -v claude &> /dev/null; then
   echo "Error: claude is not installed."
-  echo "Install it with: curl -fsSL https://claude.ai/install.sh | bash"
+  echo "This should not happen with the devcontainer setup."
   exit 1
 fi
 

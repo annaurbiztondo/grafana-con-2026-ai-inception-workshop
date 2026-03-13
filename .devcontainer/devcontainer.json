@@ -1,10 +1,8 @@
 {
   "name": "GrafanaCon 2026 - AI Workshop",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "image": "mcr.microsoft.com/devcontainers/universal:linux",
   "features": {
-    "ghcr.io/devcontainers/features/node:1": {},
-    "ghcr.io/devcontainers/features/go:1": { "version": "1.26" },
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
-  },
-  "postCreateCommand": "curl -fsSL https://claude.ai/install.sh | bash"
+  }
 }
