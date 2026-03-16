@@ -35,9 +35,21 @@ sudo dnf install -y git golang jq curl
 sudo pacman -S --needed git go jq curl
 ```
 
+### Windows
+
+**We strongly recommend using GitHub Codespaces instead of a local setup on Windows.** If you must work locally, use [WSL (Windows Subsystem for Linux)](https://learn.microsoft.com/en-us/windows/wsl/install) and follow the Ubuntu/Debian instructions above from within your WSL terminal.
+
 ## 1. Install Claude Code
 
 If you don't already have Claude Code installed:
+
+### macOS
+
+```bash
+brew install --cask claude-code
+```
+
+### Linux
 
 ```bash
 curl -fsSL https://claude.ai/install.sh | bash
